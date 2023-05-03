@@ -13,6 +13,7 @@ if ($usuario == ''){
 <html>
 <head>
 	<title>Produtos</title>
+	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
@@ -54,7 +55,7 @@ if ($usuario == ''){
 	<div class="col-md-12">
 		<button class="btn btn-info mt-4 mb-2" data-toggle="modal" data-target="#modal">Novo Produto</button>
 	</div>
-	<table class="table">
+	<table class="table table-striped table-hover">
 	  <thead>
 	    <tr>
 	      <th scope="col">Nome</th>
