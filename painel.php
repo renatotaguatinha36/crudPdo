@@ -116,8 +116,8 @@ if ($usuario == ''){
 	    	<td><?php echo $nome_produto ?></td>
 	      
 	       <td>
-	      	<a href="painel.php?acao=editar&id=<?php echo $id; ?>" class="text-info mr-1"><i class="far fa-edit"></i></a>
-	      	<a href="painel.php?acao=excluir&id=<?php echo $id; ?>" class="text-danger"><i class="far fa-trash-alt"></i></a>
+	      	<a href="painel.php?acao=editar&id=<?php echo $id; ?>" class="text-info mr-1">Editar&nbsp;<i class="far fa-edit"></i></a>
+	      	<a href="painel.php?acao=excluir&id=<?php echo $id; ?>" class="text-danger">Excluir&nbsp;<i class="far fa-trash-alt"></i></a>
 	      </td>
 
 	    </tr>
