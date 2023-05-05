@@ -65,7 +65,7 @@ if ($usuario == ''){
 	<div class="col-md-12">
 		<button class="btn btn-info mt-4 mb-2" data-toggle="modal" data-target="#modal">Novo Fornecedor</button>
 	</div>
-	<table class="table table-striped">
+	<table class="table table-striped table-hover">
 	  <thead>
 	    <tr>
 	      <th scope="col">Nome</th>
@@ -270,7 +270,7 @@ foreach ($dados as $key => $value) {
 	$email = $dados['email'];
 	$produto = $dados['produto'];
 
-	$res_p = $conexao->query("SELECT * from produtos where id = '$produto'");
+	$res_p = $conexao->query("SELECT * from produtos where id = '$produto' ");
 				$dados_p = $res_p->fetch(PDO::FETCH_ASSOC);
 					foreach ($dados_p as $key => $value) {
 					$nome_produto = $dados_p['nome'];
@@ -314,7 +314,7 @@ foreach ($dados as $key => $value) {
 			    	<option value="<?php echo $produto ?>"><?php echo $nome_produto ?></option>
 
 			    	<?php 
-			    	$res = $conexao->query("SELECT * from produtos order by nome asc");
+			    	$res = $conexao->query("SELECT * FROM produtos ORDER BY nome ASC");
 
 			    	$dados = $res->fetchAll(PDO::FETCH_ASSOC);
 					
