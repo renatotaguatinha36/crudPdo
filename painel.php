@@ -259,7 +259,7 @@ if(@$_GET['acao'] == 'editar'){
 	$id = $_GET['id'];
 	$id_editar = $_GET['id'];
 
-$res = $conexao->query("SELECT * from fornecedores where id = '$id'");
+$res = $conexao->query("SELECT * from fornecedores where id = '$id' ");
 	  		
 $dados = $res->fetch(PDO::FETCH_ASSOC);
 			
